@@ -2,10 +2,9 @@ package com.github.models;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.data.mongodb.core.mapping.Field;
 import java.util.Map;
 
-@Document(collection = "sat_questions")  
+@Document(collection = "math")  
 public class Math {
 
     @Id
