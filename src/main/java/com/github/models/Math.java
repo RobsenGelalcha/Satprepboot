@@ -28,6 +28,27 @@ public class Math {
 
     private String[] tags;
 
+    public Math(){
+
+    }
+
+    public Math(String id,String answer,Map<String, String> choices,String exam,int questionId, int originalQuestionNumber,String question,int  sectionLength, int sectionNumber,String[] tags) {
+        this.id = id;
+        this.answer = answer;
+        this.choices = choices;
+        this.exam = exam;
+        this.questionId = questionId;
+        this.originalQuestionNumber = originalQuestionNumber;
+        this.question = question;
+        this.sectionLength = sectionLength;
+        this.sectionNumber = sectionNumber;
+        this.tags = new String[tags.length];
+        System.arraycopy(tags, 0, this.tags, 0, tags.length); 
+    }
+
+
+
+
     
     public String getId() {
         return id;

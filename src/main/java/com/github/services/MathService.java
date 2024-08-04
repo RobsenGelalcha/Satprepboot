@@ -77,8 +77,5 @@ public class MathService {
     public List<Math> findByExamAndSectionLength(String exam, int sectionLength) {
         return mathRepository.findByExamAndSectionLength(exam, sectionLength);
     }
-
-
-
     
 }
