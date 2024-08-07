@@ -8,6 +8,7 @@ public class History {
 
     @Id
     private int id;
+    private int questionId;
     private String subject;
     private String prompt;
     private String a;
@@ -25,8 +26,8 @@ public class History {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public int getQuestionId(){
+        return questionId;
     }
 
     public String getSubject() {
