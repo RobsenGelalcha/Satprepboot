@@ -17,11 +17,12 @@ public class History {
     private String D;
     private String E;
     private String answer;
+    
 
     public History() {
     }
 
-    public History(int id, String subject, String prompt, String A, String B, String C, String D, String E, String answer, String questionId){
+    public History(int id, String subject, String prompt, String A, String B, String C, String D, String E, String answer, int questionId){
         this.id = id;
         this.subject = subject;
         this.A = A;
@@ -30,6 +31,7 @@ public class History {
         this.D = D;
         this.E = E;
         this.answer = answer;
+        this.questionId = questionId;
     }
 
 
