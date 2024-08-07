@@ -11,16 +11,28 @@ public class History {
     private int questionId;
     private String subject;
     private String prompt;
-    private String a;
-    private String b;
-    private String c;
-    private String d;
-    private String e;
+    private String A;
+    private String B;
+    private String C;
+    private String D;
+    private String E;
     private String answer;
 
     public History() {
-
     }
+
+    public History(int id, String subject, String prompt, String A, String B, String C, String D, String E, String answer, String questionId){
+        this.id = id;
+        this.subject = subject;
+        this.A = A;
+        this.B = B;
+        this.C = C;
+        this.D = D;
+        this.E = E;
+        this.answer = answer;
+    }
+
+
 
     public int getId() {
         return id;
@@ -47,43 +59,43 @@ public class History {
     }
 
     public String getA() {
-        return a;
+        return A;
     }
 
     public void setA(String a) {
-        this.a = a;
+        this.A = a;
     }
 
     public String getB() {
-        return b;
+        return B;
     }
 
     public void setB(String b) {
-        this.b = b;
+        this.B = b;
     }
 
     public String getC() {
-        return c;
+        return C;
     }
 
     public void setC(String c) {
-        this.c = c;
+        this.C= c;
     }
 
     public String getD() {
-        return d;
+        return D;
     }
 
     public void setD(String d) {
-        this.d = d;
+        this.D = d;
     }
 
     public String getE() {
-        return e;
+        return E;
     }
 
     public void setE(String e) {
-        this.e = e;
+        this.E = e;
     }
 
     public String getAnswer() {
