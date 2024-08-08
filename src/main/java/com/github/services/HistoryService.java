@@ -21,6 +21,20 @@ public List<History> findAll() {
     return historyRepository.findAll();
 }
 
+public List<History> findByQuestionId(int questionId){
+    return historyRepository.findByQuestionId(questionId);
+}
+
+public List<History> findBySubject(String subject){
+    return historyRepository.findBySubject(subject);
+}
+
+public List<History> findByPrompt(String prompt){
+    return historyRepository.findByPrompt(prompt);
+}
+
+ 
+
 
 
 
