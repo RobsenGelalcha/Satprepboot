@@ -9,12 +9,11 @@ import com.github.models.History;
 @Repository
 public interface HistoryRepository extends MongoRepository<History, String> {
     
-    List<History> findById(int id);
 
     List<History> findByQuestionId(int questionId);
 
     List<History> findBySubject(String subject);
-
+    
     List<History> findByPrompt(String prompt);
  
 }

@@ -17,8 +17,8 @@ public class History {
     private String D;
     private String E;
     private String answer;
-    
 
+    
     public History() {
     }
 

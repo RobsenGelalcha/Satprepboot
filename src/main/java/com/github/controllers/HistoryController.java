@@ -25,7 +25,17 @@ public class HistoryController {
     }
 
     @GetMapping("/questionId/{questionId}")
-    public List<History> getHistoryByQuestionId@PathVariable int questionId){
-        return HistoryService.findByQuestionId(questionId);
+    public List<History> getHistoryByQuestionId(@PathVariable int questionId){
+        return historyService.findByQuestionId(questionId);
+    }
+
+    @GetMapping("/subject/{subject}")
+    public List<History> getHistoryBySubject(@PathVariable String subject){
+        return historyService.findBySubject(subject);
+    }
+
+    @GetMapping("/prompt/{prompt}")
+    public List<History> getHistoryByPrompt(@PathVariable String prompt){
+        return historyService.findByPrompt(prompt);
     }
 }

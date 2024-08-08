@@ -1,12 +1,11 @@
 package com.github.services;
-
 import com.github.models.Math;
 import com.github.repository.MathRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.Map;
+
 
 @Service
 public class MathService {
@@ -18,8 +17,6 @@ public class MathService {
     public MathService(MathRepository mathRepository) {
         this.mathRepository = mathRepository;
     }
-
-    
 
     public List<Math> findAll() {
         return mathRepository.findAll();
