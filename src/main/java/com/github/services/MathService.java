@@ -11,7 +11,7 @@ import java.util.Map;
 public class MathService {
 
     
-    private MathRepository mathRepository;
+    private final MathRepository mathRepository;
 
     @Autowired
     public MathService(MathRepository mathRepository) {

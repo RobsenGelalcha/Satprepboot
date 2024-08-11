@@ -1,6 +1,7 @@
 package com.github.models;
 
 import lombok.Getter;
+import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 @Getter
@@ -11,13 +12,21 @@ public class History {
     @Id
     private int id;
     private int questionId;
+    @Setter
     private String subject;
+    @Setter
     private String prompt;
+    @Setter
     private String A;
+    @Setter
     private String B;
+    @Setter
     private String C;
+    @Setter
     private String D;
+    @Setter
     private String E;
+    @Setter
     private String answer;
 
     
@@ -36,37 +45,5 @@ public class History {
         this.questionId = questionId;
     }
 
-
-    public void setSubject(String subject) {
-        this.subject = subject;
-    }
-
-    public void setPrompt(String prompt) {
-        this.prompt = prompt;
-    }
-
-    public void setA(String a) {
-        this.A = a;
-    }
-
-    public void setB(String b) {
-        this.B = b;
-    }
-
-    public void setC(String c) {
-        this.C= c;
-    }
-
-    public void setD(String d) {
-        this.D = d;
-    }
-
-    public void setE(String e) {
-        this.E = e;
-    }
-
-    public void setAnswer(String answer) {
-        this.answer = answer;
-    }
 
 }
