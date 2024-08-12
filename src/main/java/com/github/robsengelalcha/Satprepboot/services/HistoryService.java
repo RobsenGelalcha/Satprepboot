@@ -10,10 +10,10 @@ import java.util.List;
 @Service
 public class HistoryService {
 
-    private HistoryRepository historyRepository;
+    private final HistoryRepository historyRepository;
 
     @Autowired
-    public HistoryService(HistoryRepository historyRepository) {
+    public HistoryService(HistoryRepository historyRepository) { this.historyRepository = historyRepository;
 
 }
 

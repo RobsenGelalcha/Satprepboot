@@ -16,6 +16,7 @@ public class MathService {
     @Autowired
     public MathService(MathRepository mathRepository) {
         this.mathRepository = mathRepository;
+
     }
 
     public List<Math> findAll() {

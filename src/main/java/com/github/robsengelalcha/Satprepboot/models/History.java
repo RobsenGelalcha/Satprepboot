@@ -9,7 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class History {
 
     @Id
-    private int id;
+    private String id;
     private int questionId;
     @Setter
     private String subject;
@@ -32,7 +32,7 @@ public class History {
     public History() {
     }
 
-    public History(int id, String subject, String prompt, String A, String B, String C, String D, String E, String answer, int questionId){
+    public History(String id, String subject, String prompt, String A, String B, String C, String D, String E, String answer, int questionId){
         this.id = id;
         this.subject = subject;
         this.A = A;
