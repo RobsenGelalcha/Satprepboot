@@ -3,7 +3,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 import java.util.List;
 
-import com.github.models.History;
+import com.github.robsengelalcha.Satprepboot.models.History;
 
 
 @Repository
