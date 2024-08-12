@@ -1,7 +1,9 @@
-package com.github.controllers;
 
-import com.github.models.History;
-import com.github.services.HistoryService;
+
+package com.github.robsengelalcha.Satprepboot.controllers;
+
+import com.github.robsengelalcha.Satprepboot.models.History;
+import com.github.robsengelalcha.Satprepboot.services.HistoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

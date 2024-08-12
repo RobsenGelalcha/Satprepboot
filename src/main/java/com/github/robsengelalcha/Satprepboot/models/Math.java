@@ -1,4 +1,4 @@
-package com.github.models;
+package com.github.robsengelalcha.Satprepboot.models;
 
 import lombok.Getter;
 import lombok.Setter;

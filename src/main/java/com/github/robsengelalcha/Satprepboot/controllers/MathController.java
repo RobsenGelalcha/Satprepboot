@@ -1,7 +1,7 @@
-package com.github.controllers;
+package com.github.robsengelalcha.Satprepboot.controllers;
 
-import com.github.models.Math;
-import com.github.services.MathService;
+import com.github.robsengelalcha.Satprepboot.models.Math;
+import com.github.robsengelalcha.Satprepboot.services.MathService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

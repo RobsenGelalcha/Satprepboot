@@ -1,8 +1,7 @@
-package com.github.services;
-import com.github.models.History;
-import com.github.repository.HistoryRepository;
+package com.github.robsengelalcha.Satprepboot.services;
+import com.github.robsengelalcha.Satprepboot.models.History;
+import com.github.robsengelalcha.Satprepboot.repository.HistoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 

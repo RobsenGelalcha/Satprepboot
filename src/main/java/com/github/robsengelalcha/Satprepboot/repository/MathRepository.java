@@ -1,6 +1,6 @@
-package com.github.repository;
+package com.github.robsengelalcha.Satprepboot.repository;
 
-import com.github.models.Math;
+import com.github.robsengelalcha.Satprepboot.models.Math;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 import java.util.List;
