@@ -49,6 +49,10 @@ public class MathController {
     public List<Math> getMathBySectionLength(@PathVariable int sectionLength) {
         return mathService.findBySectionLength(sectionLength);
     }
+    @GetMapping("/test")
+    public String testEndpoint() {
+        return "API is working";
+    }
 
     @GetMapping("/sectionNumber/{sectionNumber}")
     public List<Math> getMathBySectionNumber(@PathVariable int sectionNumber) {

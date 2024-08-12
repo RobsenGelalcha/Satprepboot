@@ -6,7 +6,6 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 @Getter
 @Document(collection = "sat_history")
-
 public class History {
 
     @Id
@@ -43,6 +42,7 @@ public class History {
         this.E = E;
         this.answer = answer;
         this.questionId = questionId;
+
     }
 
 
