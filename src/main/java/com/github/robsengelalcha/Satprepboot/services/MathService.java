@@ -6,11 +6,9 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Map;
 
-
 @Service
 public class MathService {
 
-    
     private final MathRepository mathRepository;
 
     @Autowired
@@ -48,6 +46,7 @@ public class MathService {
         return mathRepository.findBySectionNumber(sectionNumber);
     }
 
+    
     public List<Math> findByTags(String[] tags) {
         return mathRepository.findByTags(tags);
     }
