@@ -8,7 +8,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SatprepbootApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SatprepbootApplication.class, args);
-
 	}
 
 }

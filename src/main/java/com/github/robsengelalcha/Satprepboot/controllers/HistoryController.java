@@ -9,13 +9,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-
 @RestController
 @RequestMapping("/sat_history")
 public class HistoryController {
     private final HistoryService historyService;
-
-
 
     @Autowired
     public HistoryController(HistoryService historyService){
@@ -30,7 +27,7 @@ public class HistoryController {
     public List<History> getHistoryByQuestionId(@PathVariable int questionId){
         return historyService.findByQuestionId(questionId);
     }
-
+    
     @GetMapping("/subject/{subject}")
     public List<History> getHistoryBySubject(@PathVariable String subject){
         return historyService.findBySubject(subject);
