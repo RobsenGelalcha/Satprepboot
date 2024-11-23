@@ -84,6 +84,7 @@ public class MathController {
         return mathService.findByExamAndOriginalQuestionNumber(exam, originalQuestionNumber);
     }
 
+
     @GetMapping("/examAndQuestion")
     public List<Math> getMathByExamAndQuestion(@RequestParam String exam, @RequestParam String question) {
         return mathService.findByExamAndQuestion(exam, question);
